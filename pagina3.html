@@ -22,6 +22,12 @@ g.type='text/javascript'; g.async=true; g.src='https://cdn.matomo.cloud/jmarinho
   
   <h3>Agora tente sair.</h3>
   
+  <script>
+window.onbeforeunload = function(event) {
+  event.returnValue = "Write something clever here..";
+};
+</script>
+  
   <a href="index.html">Voltar atrás</a>
   
 </body>
