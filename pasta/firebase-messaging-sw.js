@@ -15,6 +15,7 @@ importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js');
 
 'use strict';
+firebase.initializeApp();
 const messaging = firebase.messaging();
 
 let egoiapp = {};
