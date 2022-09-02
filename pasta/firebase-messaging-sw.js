@@ -11,8 +11,8 @@
  * All rights reserved. 2021
  *
  */
-importScripts('https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/5.5.5/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/6.0.2/firebase-messaging.js');
 
 'use strict';
 firebase.initializeApp({
