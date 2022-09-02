@@ -16,7 +16,7 @@ importScripts('https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging-compa
 
 'use strict';
 
-const messaging = getMessaging();
+const messaging = firebase.messaging();
 
 let egoiapp = {};
 
