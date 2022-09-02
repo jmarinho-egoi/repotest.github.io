@@ -16,6 +16,17 @@ importScripts('https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging-compa
 
 'use strict';
 
+const firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+
+firebase.initializeApp(firebaseConfig);
+
 const messaging = firebase.messaging();
 
 let egoiapp = {};
