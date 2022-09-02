@@ -11,21 +11,14 @@
  * All rights reserved. 2021
  *
  */
-importScripts('https://www.gstatic.com/firebasejs/9.9.3/firebase-app-compat.js');
-importScripts('https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/5.5.5/firebase-messaging.js');
 
 'use strict';
+firebase.initializeApp({
+    'messagingSenderId': 'egoiAppCode'
+});
 
-const firebaseConfig = {
-    apiKey: "",
-    authDomain: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: "",
-    appId: ""
-  };
-
-firebase.initializeApp(firebaseConfig);
 
 const messaging = firebase.messaging();
 
