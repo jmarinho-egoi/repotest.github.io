@@ -11,18 +11,16 @@
  * All rights reserved. 2021
  *
  */
-importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.16.1/firebase-messaging.js');
 
 'use strict';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyBXqIScUwlrNQE2KWfTttH6HLR7dnRIUmQ",
-  authDomain: "marinhotoken.firebaseapp.com",
-  projectId: "marinhotoken",
-  storageBucket: "marinhotoken.appspot.com",
-  messagingSenderId: "521757884365",
-  appId: "1:521757884365:web:a15b043ccbfef7a8e68e84"
+    messagingSenderId: "521757884365",
+    apiKey: "AIzaSyBXqIScUwlrNQE2KWfTttH6HLR7dnRIUmQ",
+    projectId: "marinhotoken",
+    appId: "1:521757884365:web:a15b043ccbfef7a8e68e84",
 });
 
 
