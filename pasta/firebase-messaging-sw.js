@@ -11,11 +11,11 @@
  * All rights reserved. 2021
  *
  */
-importScripts('https://www.gstatic.com/firebasejs/9.9.3/firebase-messaging-compat.js');
+importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js');
 
 'use strict';
-
-const messaging = getMessaging();
+const messaging = firebase.messaging();
 
 let egoiapp = {};
 
