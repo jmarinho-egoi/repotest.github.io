@@ -6,39 +6,30 @@
 <title>Página de testes</title>
 <!-- Connected Sites -->
 <script>
-var _mtm = window._mtm = window._mtm || [];
-check_script_loaded(_mtm);
- 
-function check_script_loaded(glob_var) {
- console.log("Checking script");
-if(typeof(glob_var) !== 'undefined') {
+if(window.egoiConnectedSitesLoaded){
  console.log("Script already loaded!");
 } else {
- console.log("Creating script!");
- _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
- var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
- g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
- s.parentNode.insertBefore(g,s);
-}
-}
-</script>
- 
-<script>
-var _mtm = window._mtm = window._mtm || [];
-check_script_loaded(_mtm);
- 
-function check_script_loaded(glob_var) {
- console.log("Checking script");
-if(typeof(glob_var) !== 'undefined') {
- console.log("Script already loaded!");
-} else {
- console.log("Creating script!");
  var _mtm = window._mtm = window._mtm || [];
  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
  g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
  s.parentNode.insertBefore(g,s);
+ 
+ window.egoiConnectedSitesLoaded = true;
 }
+</script>
+ 
+<script>
+f(window.egoiConnectedSitesLoaded){
+ console.log("Script already loaded!");
+} else {
+ var _mtm = window._mtm = window._mtm || [];
+ _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+ var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+ g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
+ s.parentNode.insertBefore(g,s);
+ 
+ window.egoiConnectedSitesLoaded = true;
 }
 </script>
 <!-- End Connected Sites -->
