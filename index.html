@@ -11,9 +11,17 @@ _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
 s.parentNode.insertBefore(g,s);
- document.addEventListener("DOMContentLoaded", () => {
-    alert(g.src);
-  });
+check_script_loaded(_mtm);
+function check_script_loaded(glob_var) {
+ console.log("BOAS MAN");
+    if(typeof(glob_var) !== 'undefined') {
+    // do your thing
+    } else {
+    setTimeout(function() {
+    check_script_loaded(glob_var)
+    }, 100)
+    }
+}
 </script>
 <!-- End Connected Sites -->
  <!-- Connected Sites
