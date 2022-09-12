@@ -11,6 +11,16 @@ _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
 s.parentNode.insertBefore(g,s);
+
+ if(isScriptAlreadyIncluded(g.src){
+    alert("JA CA TOU MANO");
+ }
+function isScriptAlreadyIncluded(src){
+   var scripts = document.getElementsByTagName("script");
+   for(var i = 0; i < scripts.length; i++) 
+      if(scripts[i].getAttribute('src') == src) return true;
+   return false;
+}
 </script>
 <!-- End Connected Sites -->
  <!-- Connected Sites
