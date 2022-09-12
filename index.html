@@ -6,6 +6,7 @@
 <title>Página de testes</title>
 <!-- Connected Sites -->
 <script>
+var _mtm = window._mtm = window._mtm || [];
 check_script_loaded(_mtm);
  
 function check_script_loaded(glob_var) {
@@ -14,7 +15,6 @@ if(typeof(glob_var) !== 'undefined') {
  console.log("Script already loaded!");
 } else {
  console.log("Creating script!");
- var _mtm = window._mtm = window._mtm || [];
  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
  g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
@@ -23,7 +23,8 @@ if(typeof(glob_var) !== 'undefined') {
 }
 </script>
  
- <script>
+<script>
+var _mtm = window._mtm = window._mtm || [];
 check_script_loaded(_mtm);
  
 function check_script_loaded(glob_var) {
