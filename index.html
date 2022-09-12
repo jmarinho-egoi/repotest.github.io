@@ -7,20 +7,19 @@
 <!-- Connected Sites -->
 <script>
 var _mtm = window._mtm = window._mtm || [];
-_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
-s.parentNode.insertBefore(g,s);
+
 check_script_loaded(_mtm);
+ 
 function check_script_loaded(glob_var) {
  console.log("BOAS MAN");
-    if(typeof(glob_var) !== 'undefined') {
- console.log("fazer cenas aqui");
-    } else {
-    setTimeout(function() {
-    check_script_loaded(glob_var)
-    }, 100)
-    }
+if(typeof(glob_var) !== 'undefined') {
+ console.log("Script already loaded!");
+} else {
+ _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+ var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+ g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
+ s.parentNode.insertBefore(g,s);
+}
 }
 </script>
 <!-- End Connected Sites -->
