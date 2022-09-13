@@ -6,30 +6,30 @@
 <title>Página de testes</title>
 <!-- Connected Sites -->
 <script>
-if(window.egoiConnectedSitesLoaded){
- console.log("Script already loaded!");
-} else {
-  console.log("entrou em ciima)");
- window.egoiConnectedSitesLoaded = true;
- var _mtm = window._mtm = window._mtm || [];
- _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
- var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
- g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
- s.parentNode.insertBefore(g,s);
+if(window._mtmReady){ 
+ console.error('Connected sites script already loaded. You might have it repeated.'); 
+} else { 
+window._mtmReady=true 
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
+s.parentNode.insertBefore(g,s);
 }
 </script>
+<!-- End Connected Sites -->
  
+ <!-- Connected Sites -->
 <script>
-if(window.egoiConnectedSitesLoaded){
- console.log("Script already loaded!");
-} else {
- console.log("entrou em baixo)");
- window.egoiConnectedSitesLoaded = true;
- var _mtm = window._mtm = window._mtm || [];
- _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
- var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
- g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
- s.parentNode.insertBefore(g,s);
+if(window._mtmReady){ 
+ console.error('Connected sites script already loaded. You might have it repeated.'); 
+} else { 
+window._mtmReady=true 
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
+s.parentNode.insertBefore(g,s);
 }
 </script>
 <!-- End Connected Sites -->
