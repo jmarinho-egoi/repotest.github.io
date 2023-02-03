@@ -4,22 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Página de teste 2</title>
-<!-- Connected Sites
+  <!-- Connected Sites -->
 <script>
+if(window._mtmReady){ 
+ console.error('Connected sites script already loaded. You might have it dupplicated.'); 
+} else { 
+window._mtmReady=true; 
 var _mtm = window._mtm = window._mtm || [];
 _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
 s.parentNode.insertBefore(g,s);
-</script>
-<!-- End Connected Sites -->
-  <!-- Connected Sites 
-<script type="text/javascript">
-var _mtm = window._mtm = window._mtm || [];
-_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
-var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.src='https://egoi.site/1025529_jmarinho-egoi.github.io.js'; 
-s.parentNode.insertBefore(g,s);
+}
 </script>
 <!-- End Connected Sites -->
 </head>
@@ -37,7 +33,7 @@ s.parentNode.insertBefore(g,s);
   <a href="#">Link</a>
   <a href="#">Link</a>
   <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a id="mariana" href="#">Link</a>
 </div>
 
 <div>
